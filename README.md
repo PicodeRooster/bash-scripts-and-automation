@@ -1,1 +1,1 @@
-# bash-scripts-and-automation
+Here you can find all shell scripts written in bash language that I have created over time. Some are simple scripts running basic instructions, like initializing executable documents. Others are much more specific to certain tasks, like automating google searches. I plan to further expand the functions of the scripts as I learn more. 
