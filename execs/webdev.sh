@@ -1,5 +1,6 @@
-mkdir "Project Folder"
-cd "Project Folder"
+read -rp "Enter file path: " dir
+cd "$dir" || { echo "Directory not found"; exit 1; }
+
 echo '<!DOCTYPE html>
 <html>
     <head>
@@ -14,10 +15,19 @@ echo '<!DOCTYPE html>
         <script src="" async defer></script>
     </body>
 </html>' > index.html
+
+default_name=$(basename "$PWD")
+read -rp "Project name [${default_name}]: " projectname
+projectname=${projectname:-$default_name}
+
 mkdir js
-mkdir img
 mkdir css
 touch js/main.js
 touch css/main.css
 
- 
+mkdir media
+cd media
+
+mkdir videos
+mkdir sfx
+mkdir images
