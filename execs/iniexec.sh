@@ -1,6 +1,6 @@
 cat << description
 call this with the name of the new file you wish to create
-type ./init_executable.sh <your file name>
+type ./iniexec.sh <your file name>
 description
 
 file_name="$1"
