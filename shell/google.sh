@@ -1,3 +1,8 @@
-query="$1"
-url="http://www.google.com/search?q=${query// /+}" 
-xdg-open "$url" >/dev/null 2>&1 & disown
+url="https://www.google.com/search?q="
+if [ $# = 0 ]; then
+  echo "Please pass at least one search term as an argument."
+else
+  for arg in "$@"; do
+    open "$url$arg"
+    done
+fi
