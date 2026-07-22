@@ -20,4 +20,4 @@ One of my favorites! It enables the possibility to google from the terminal, tak
 In earlier versions, it only took a single argument and I would manually loop through arrays of search terms. I realized later how backwards this method was is and modified it. The current approach allows a user to input any number of parameters, without having to write a single loop. 
 
 - `iniexe.sh`
-The ultimate "lazy admin" script. Enter the file name as a parameter to create create a new shell script in the current directory. It automatically applies executable permissions applied.  
+The ultimate "lazy admin" script. Enter the file name as a parameter to create a new shell script in the current directory. It automatically makes the file and executable with `chmod +x`, and `chmod 755` to set the file permissions so that the owner can read, write, and execute.
