@@ -15,3 +15,9 @@ Some are simple scripts running basic instructions, like initializing executable
 A simple PowerShell script that gets the current date and exact time with seconds. I use this often for logging documentation and ticket entries.
 
 - `google.sh`
+One of my favorites! It enables the possibility to google from the terminal, taking any number of parameters as search terms and opening the link for each given keyword. 
+
+In earlier versions, it only took a single argument and I would manually loop through arrays of search terms. I realized later how backwards this method was is and modified it. The current approach allows a user to input any number of parameters, without having to write a single loop. 
+
+- `iniexe.sh`
+The ultimate "lazy admin" script. Enter the file name as a parameter to create create a new shell script in the current directory. It automatically applies executable permissions applied.  

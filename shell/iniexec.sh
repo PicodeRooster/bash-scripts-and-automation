@@ -8,4 +8,5 @@ ext=".sh"
 new_file="$file_name$ext"
 echo "echo \"Hello from new file.\"" > "$new_file"
 chmod +x $new_file
+chmod 755 $new_file
 nano $new_file
